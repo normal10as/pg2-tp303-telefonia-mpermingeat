@@ -12,6 +12,7 @@
         Me.Dni = dni
     End Sub
 
+    '///////////////Properties///////////////////
     Public Property Nombre() As String
         Get
             Return _nombre
@@ -38,5 +39,11 @@
             _dni = value
         End Set
     End Property
+
+    '///////////////Metodos///////////////////
+    Public Function ToString() As String
+        Return Nombre & " " & Apellido & " " & Dni
+    End Function
+
 End Class
 
