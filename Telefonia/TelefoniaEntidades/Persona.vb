@@ -5,8 +5,8 @@
     Private _apellido As String
     Private _dni As UInteger
 
-    Public Sub New(Nombre As String, Apellido As String, dni As UInteger)
-        MyBase.New()
+    Public Sub New(Nombre As String, Apellido As String, dni As UInteger, Cuenta As UInteger)
+        MyBase.New(Cuenta)
         Me.Nombre = Nombre
         Me.Apellido = Apellido
         Me.Dni = dni
@@ -42,7 +42,7 @@
 
     '///////////////Metodos///////////////////
     Public Function ToString() As String
-        Return Nombre & " " & Apellido & " " & Dni
+        Return Apellido & " " & Nombre & " " & Cuenta
     End Function
 
 End Class

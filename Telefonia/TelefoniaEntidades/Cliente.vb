@@ -1,7 +1,7 @@
 ﻿Public Class Cliente
     Private _cuenta As UInteger
 
-    Public Sub New()
+    Public Sub New(Cuenta As UInteger)
         Me._cuenta = Cuenta
     End Sub
 
